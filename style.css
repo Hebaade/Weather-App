@@ -1,0 +1,123 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #8e9fce67;
+}
+.card{
+    width:90%;
+    max-width: 470px;
+    background: linear-gradient(135deg,#00feba,#5b548a);
+    color: white;
+    margin: 50px auto 10px;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+    padding: 40px 35px;
+    text-align: center;
+}
+.search{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+}
+.fa-magnifying-glass{
+    cursor: pointer;
+    padding: 15px;
+    background-color: aliceblue;
+    color: black;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+.fa-magnifying-glass:hover{
+    background-color: rgb(223, 225, 226);
+}
+.search input{
+    border: 0;
+    outline: 0;
+    color: #555;
+    background-color: #ebfffc;
+    padding: 10px 25px;
+    height: 50px;
+    margin-right: 20px;
+    font-size: 18px;
+     flex: 1;
+    border-radius: 30px;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    -ms-border-radius: 30px;
+    -o-border-radius: 30px;
+}
+.weatherIcon{
+    width: 170px;
+    margin-top: 30px;
+}
+.weather h1{
+    font-size: 80px;
+    font-weight: 500;
+}
+.weather h2{
+    font-size: 45px;
+    font-weight: 400;
+    margin-top: -10px;
+}
+.details{
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 20px;
+    align-items: center;
+}
+.col{
+    display: flex;
+    text-align: left;
+    align-items: center;
+}
+.col img{
+    width: 40px;
+    margin-right: 10px;
+}
+.humidity,.wind{
+    font-size: 28px;
+    margin-top: -6px;
+}
+.weather{
+    display: none;
+    transition: 1s;
+    -webkit-transition: 1s;
+    -moz-transition: 1s;
+    -ms-transition: 1s;
+    -o-transition: 1s;
+}
+.error{
+    text-align: left;
+    margin-left: 10px;
+    font-size: 14px;
+    margin-top: 15px;
+    display: none;
+}
+@media(max-width:460px){
+    .card{
+        width: 95%
+    }
+    .search{
+        width: 100%;
+    }
+    .search input{
+        width: 70%;
+    }
+    .details{
+        flex-direction: column;
+    }
+    .col{
+        margin-top: 30px;
+    }
+}
